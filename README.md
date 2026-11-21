@@ -16,17 +16,35 @@ A partir de la posición detectada, el motor de ajedrez de código abierto **Sto
 - Ejecución de movimientos *pick and place* mediante datos grabados con LeLab.
 - Prototipo funcional capaz de realizar jugadas sencillas en un tablero de **4×4**.
 
-## Tecnologías utilizadas
-
-- **SO-101** + **LeLab**
-- **OpenCV**
-- **ArUco**
-- **Stockfish**
-- **Python** / scripts de control
-- Grabación y reproducción de trayectorias *pick and place*
 
 ## Contexto
 
 Proyecto realizado en la **Hackathon de Bilbao, noviembre de 2026**, con el objetivo de explorar la integración de robótica de bajo coste, visión por computador y motores de ajedrez en un sistema capaz de interactuar físicamente con un tablero.
 
 > Estado del proyecto: **prototipo hackathon**. El sistema demuestra el flujo completo de percepción, decisión y actuación robótica para jugar pequeñas jugadas de ajedrez sobre un tablero reducido.
+
+## Funcionamiento del sistema
+
+El flujo del prototipo conecta visión por computador, motor de ajedrez y control robótico en un ciclo de percepción, decisión y ejecución:
+
+    1. Captura y rectificación del tablero (OpenCV):
+
+        Una cámara captura una imagen de la escena.
+
+        Mediante OpenCV, la imagen se transforma y recorta para aislar únicamente el tablero de 4×4 usando cuatro puntos de referencia (dos marcadores verdes y dos rojos).
+
+    2. Detección de piezas con códigos ArUco:
+
+        Cada pieza del ajedrez tiene forma de cubo e incorpora un código ArUco.
+
+        El software de OpenCV lee los códigos ArUco para identificar qué pieza representa cada bloque y su posición en el tablero.
+
+    3. Cálculo de la mejor jugada (Stockfish):
+
+        Con el estado del tablero detectado, el motor de ajedrez de código abierto Stockfish evalúa la posición y predice la mejor jugada posible.
+
+        OpenCV superpone y muestra la jugada recomendada sobre la imagen virtual del tablero.
+
+    4. Ejecución de pick and place (SO-101 + LeLab):
+
+        A partir de grabaciones de datasets de pick and place capturadas previamente con el robot mediante LeLab, el brazo robótico SO-101 (controlado por scripts desde la terminal) recoge la pieza indicada y la coloca en la casilla correspondiente según la jugada sugerida por Stockfish.
