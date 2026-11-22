@@ -1,0 +1,28 @@
+{
+  "timestamp": 1795229738.4264429,
+  "board_detected": true,
+  "ai_side": "black",
+  "pieces": [
+    {
+      "id": 3,
+      "color": "black",
+      "piece": "bishop",
+      "square": "C2"
+    },
+    {
+      "id": 9,
+      "color": "white",
+      "piece": "bishop",
+      "square": "D4"
+    },
+    {
+      "id": 4,
+      "color": "black",
+      "piece": "knight",
+      "square": "B3"
+    }
+  ],
+  "suggested_move": null,
+  "evaluation_white": -100000,
+  "note": "Experimental 4x4 mini-chess; not full standard chess rules"
+}

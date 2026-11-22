@@ -1,0 +1,26 @@
+{
+    "status": "proposed",
+    "from": "A4",
+    "to": "C3",
+    "piece": "N",
+    "piece_id": 5,
+    "capture": true,
+    "captured_piece_id": 2,
+    "from_image": {
+        "x": 80,
+        "y": 80
+    },
+    "to_image": {
+        "x": 400,
+        "y": 240
+    },
+    "coordinate_system": "warped_board_pixels",
+    "board_size": [
+        4,
+        4
+    ],
+    "image_size": [
+        640,
+        640
+    ]
+}
