@@ -1,45 +1,42 @@
-# Stockfish Based Chess Playing Robotics Arm
+# Stockfish-Based Chess-Playing Robotic Arm
 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/50c4cbd1-f957-451b-9054-360bd8e05d13" />
 
+Prototype developed during the **Bilbao Hackathon (November 2026)** that combines computer vision, a chess engine, and a robotic arm to play simple games on a **4×4** chessboard.
 
-Prototipo desarrollado durante la **Hackathon de Bilbao (noviembre de 2026)** que combina visión artificial, un motor de ajedrez y un brazo robótico para jugar partidas sencillas sobre un tablero de ajedrez de **4×4**.
-
-El sistema utiliza un robot **SO-101** controlado mediante **LeLab** desde terminal. A través de distintos scripts, el brazo es capaz de mover piezas de ajedrez representadas por bloques cúbicos con códigos **ARUCO**. Una cámara captura una imagen del tablero y, mediante **OpenCV**, se procesa la imagen para rectificarla usando cuatro puntos de referencia: dos verdes y dos rojos. Gracias a la lectura de los códigos ARUCO, el software identifica qué pieza del ajedrez corresponde a cada bloque.
+The system uses an **SO-101** robot controlled via **LeLab** from the terminal. Through different scripts, the arm can move chess pieces represented by cubic blocks with **ARUCO** codes. A camera captures an image of the board and, using **OpenCV**, the image is processed to rectify it using four reference points: two green and two red. Thanks to ARUCO code reading, the software identifies which chess piece corresponds to each block.
 
 <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/59644251-9708-40cb-b2b5-e48c86029cb5" />
 
-A partir de la posición detectada, el motor de ajedrez de código abierto **Stockfish** calcula la mejor jugada posible. OpenCV muestra esa jugada sobre una representación virtual del tablero. Finalmente, usando grabaciones de un dataset de *pick and place* realizadas con el robot mediante LeLab, el brazo robótico mueve la pieza y la coloca en la casilla indicada por Stockfish.
+Based on the detected position, the open-source chess engine **Stockfish** calculates the best possible move. OpenCV displays that move on a virtual representation of the board. Finally, using recordings from a *pick and place* dataset created with the robot via LeLab, the robotic arm moves the piece and places it on the square indicated by Stockfish.
 
-## Características principales
+## Main Features
 
-- Control del robot **SO-101** mediante **LeLab** y scripts de terminal.
-- Visión artificial con **OpenCV** para captura, rectificación y análisis del tablero.
-- Reconocimiento de piezas mediante **códigos ARUCO** en bloques cúbicos.
-- Integración con **Stockfish** para la predicción de la mejor jugada.
-- Visualización de la jugada sugerida sobre una imagen virtual del tablero.
-- Ejecución de movimientos *pick and place* mediante datos grabados con LeLab.
-- Prototipo funcional capaz de realizar jugadas sencillas en un tablero de **4×4**.
+- Control of the **SO-101** robot via **LeLab** and terminal scripts.
+- Computer vision with **OpenCV** for board capture, rectification, and analysis.
+- Piece recognition using **ARUCO codes** on cubic blocks.
+- Integration with **Stockfish** for best-move prediction.
+- Visualization of the suggested move on a virtual board image.
+- Execution of *pick and place* movements using data recorded with LeLab.
+- Functional prototype capable of making simple moves on a **4×4** board.
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - **SO-101** + **LeLab**
 - **OpenCV**
 - **ArUco**
 - **Stockfish**
-- **Python** / scripts de control
-- Grabación y reproducción de trayectorias *pick and place*
+- **Python** / control scripts
+- Recording and playback of *pick and place* trajectories
 
-## Contexto
+## Context
 
-Proyecto realizado en la **Hackathon de Bilbao, noviembre de 2026**, con el objetivo de explorar la integración de robótica de bajo coste, visión por computador y motores de ajedrez en un sistema capaz de interactuar físicamente con un tablero.
+Project developed at the **Bilbao Hackathon, November 2026**, with the goal of exploring the integration of low-cost robotics, computer vision, and chess engines in a system capable of physically interacting with a board.
 
-> Estado del proyecto: **prototipo hackathon**. El sistema demuestra el flujo completo de percepción, decisión y actuación robótica para jugar pequeñas jugadas de ajedrez sobre un tablero reducido.
+> Project status: **hackathon prototype**. The system demonstrates the complete pipeline of perception, decision-making, and robotic actuation to play small chess moves on a reduced board.
 
-
-
-# Repositorios de Hugging Face:🤗
-### Dataset y datos de entrenamiento para el modelo:
+# Hugging Face Repositories: 🤗
+### Dataset and training data for the model:
   · https://huggingface.co/datasets/Tortuganeitor/SO101_ACT_Merged_Dataset
-### Modelo entrenado y aplicable para hacer mover al brazo robótico:
+### Trained model applicable for making the robotic arm move:
   · https://huggingface.co/Tortuganeitor/SO-101_Training_For_Stockfish_Robotics_Arm
