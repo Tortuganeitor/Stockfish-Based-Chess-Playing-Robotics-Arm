@@ -36,7 +36,9 @@ Proyecto realizado en la **Hackathon de Bilbao, noviembre de 2026**, con el obje
 
 > Estado del proyecto: **prototipo hackathon**. El sistema demuestra el flujo completo de percepción, decisión y actuación robótica para jugar pequeñas jugadas de ajedrez sobre un tablero reducido.
 
-## Repositorios de Hugging Face:
+
+
+# Repositorios de Hugging Face:🤗
 ### Dataset y datos de entrenamiento para el modelo:
   · https://huggingface.co/datasets/Tortuganeitor/SO101_ACT_Merged_Dataset
 ### Modelo entrenado y aplicable para hacer mover al brazo robótico:
