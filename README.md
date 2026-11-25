@@ -35,3 +35,9 @@ A partir de la posición detectada, el motor de ajedrez de código abierto **Sto
 Proyecto realizado en la **Hackathon de Bilbao, noviembre de 2026**, con el objetivo de explorar la integración de robótica de bajo coste, visión por computador y motores de ajedrez en un sistema capaz de interactuar físicamente con un tablero.
 
 > Estado del proyecto: **prototipo hackathon**. El sistema demuestra el flujo completo de percepción, decisión y actuación robótica para jugar pequeñas jugadas de ajedrez sobre un tablero reducido.
+
+## Repositorios de Hugging Face:
+### Dataset y datos de entrenamiento para el modelo:
+  · https://huggingface.co/datasets/Tortuganeitor/SO101_ACT_Merged_Dataset
+### Modelo entrenado y aplicable para hacer mover al brazo robótico:
+  · https://huggingface.co/Tortuganeitor/SO-101_Training_For_Stockfish_Robotics_Arm
