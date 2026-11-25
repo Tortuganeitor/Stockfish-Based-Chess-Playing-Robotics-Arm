@@ -1,6 +1,7 @@
 # Stockfish Based Chess Playing Robotics Arm
 
-<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/9b2ce01b-109d-44d4-8291-69493fe2cdd1" />
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/50c4cbd1-f957-451b-9054-360bd8e05d13" />
+
 
 Prototipo desarrollado durante la **Hackathon de Bilbao (noviembre de 2026)** que combina visión artificial, un motor de ajedrez y un brazo robótico para jugar partidas sencillas sobre un tablero de ajedrez de **4×4**.
 
