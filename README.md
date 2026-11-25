@@ -40,3 +40,6 @@ Project developed at the **Bilbao Hackathon, November 2026**, with the goal of e
   · https://huggingface.co/datasets/Tortuganeitor/SO101_ACT_Merged_Dataset
 ### Trained model applicable for making the robotic arm move:
   · https://huggingface.co/Tortuganeitor/SO-101_Training_For_Stockfish_Robotics_Arm
+## Contributors
+
+- [Y00NSS](https://github.com/Y00NSS) — Computer Vision, OpenCV, ArUco marker detection and chessboard tracking.
